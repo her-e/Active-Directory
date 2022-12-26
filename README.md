@@ -1,4 +1,4 @@
-## Active Directory with Virtual Machines - Implementing Domain Controller, Group Policy, and NTFS files permissions
+## Active Directory with Virtual Machines - Implementing Domain Controller and Group Policy.
 
 ## Description
 In this lab, I am going to walk through how to create an Active Directory home lab Environment using Oracle VirtualBox. Configuring and running this lab will help develop our understanding how Active Directory and windows networking works. In this lab, we will be creating our domain controller on a virtual machine that has two network adapters. This will connect to our outside internet and the other network adapter will connect to our VirtualBox private network. This will allow our client's PC to connect to the internet through the domain controller. We will be configuring our NAT and routing, DHCP, DNS, IP Address on the domain controller, and then a Client PC on another virtual machine. This will allow us to apply Group Policy Objects and provision, maintain, and deprovision users in Active Directory.
@@ -85,29 +85,26 @@ Configure Start (172.16.0.100) and End (172.16.0.200) IP Address, and Subnet Mas
 <p align="center">
 <img src="https://imgur.com/wsAFBpN.png" height="80%" width="80%" alt="Active Directory"/>
 
-Create Group Policy Object in Domain, edit, go to Computer Configuration -> Policies -> Software Settings -> Software Installation. Then right click new packages on Software Installation, then find MSI installer files, open, then add them in:
+- Create Group Policy Object in Domain, edit, go to Computer Configuration -> Policies -> Software Settings -> Software Installation. Then right click new packages on Software Installation, then find MSI installer files, open, then add them in:
 <p align="center">
 <img src="https://imgur.com/LIWFuVR.png" height="80%" width="80%" alt="Active Directory"/>
-<br />
-<br />
-Remove "Authenticated Users" in "Security Filtering", then add Security Group, "Software Deployment":
+
+- Remove "Authenticated Users" in "Security Filtering", then add Security Group, "Software Deployment":
 <p align="center">
 <img src="https://imgur.com/orGCgEh.png" height="80%" width="80%" alt="Active Directory"/>
-<br />
-<br />
-Login to workstation "Client1" with a created user to verify software:
+
+- Run "gpupdate /force" in Command Prompt, then login to workstation "Client1" with a created user to verify software:
 <p align="center">
-<img src="https://imgur.com/KEfbpf0.png" height="80%" width="80%" alt="Active Directory"/>
-<br />
-<br />
+<img src="https://imgur.com/Ijct63B.png" height="80%" width="80%" alt="Active Directory"/>
+
+- Continue placing Group Policies as you see fit.
+<br/>
+
 <p align="center">
-Configure Group Policy Object to change desktop background:
-<p align="center">
+Example: Desktop Background Change.
 <img src="https://imgur.com/KWQ6awT.png" height="80%" width="80%" alt="Active Directory"/>
 <br />
 <br />
- 
- 
  
  
 <!--

@@ -98,6 +98,8 @@ Configure Start (172.16.0.100) and End (172.16.0.200) IP Address, and Subnet Mas
 <img src="https://imgur.com/Ijct63B.png" height="80%" width="80%" alt="Active Directory"/>
 
 - Continue placing Group Policies as you see fit.
+
+- For Example: Enforce Windows Defender Firewall, Event Log, Local Polocies, Account Policy, Windows Settings, Network, Mapped Drives, and etc.
 <br/>
 
 <p align="center">

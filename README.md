@@ -12,17 +12,13 @@ The whole intention is getting ourselves a practice ground to get our hands dirt
   
 <br>
 
-## What is Active Directory?
+## What is Active Directory and how does it work?
 
 Active Directory (AD) is a database and set of services that connect users with the network resources they need to get their work done.
 
 The database (or directory) contains critical information about your environment, including what users and computers there are and who is allowed to do what. For example, the database might list 100 user accounts with details like each person’s job title, phone number and password. It will also record their permissions.
 
 These services control much of the activity that goes on an IT environment.
-
-<br>
-
-## **How does Active Directory work?**
 
 The main Active Directory service is Active Directory Domain Services (AD DS), which is part of the Windows Server operating system. The servers that run AD DS are called domain controllers (DC’s). Organizations normally have multiple DC's, and each one has a copy of the directory for the entire domain. Changes made to the directory on one domain controller — such as password update or the deletion of a user account — are replicated to the other DC’s so they all stay up to date. Desktops, laptops and other devices running Windows (rather than Windows Server) can be part of an Active Directory environment, but they do not run AD DS. AD DS relies on several established protocols and standards, including LDAP (Lightweight Directory Access Protocol), Kerberos and DNS (Domain Name System).
 
@@ -34,7 +30,7 @@ It’s important to understand that Active Directory is only for on-premises Mic
 
 <br>
 
-## Set up and Configure Domain Controller:
+## Set up Domain Controller:
 Note: Enabled 2 network adapter before starting up (NAT and Internal Network) on Windows Server 2019. <br/>
 - Assign static IP Address (172.16.0.1), Subnet Mask (255.255.255.0), and Preferred DNS (127.0.0.1) to Internal Network:  <br/>
 <p align="center">

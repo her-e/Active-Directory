@@ -30,7 +30,7 @@ It’s important to understand that Active Directory is only for on-premises Mic
 
 <br>
 
-## Set up Domain Controller:
+## Part 1: Set up Domain Controller:
 Note: Enabled 2 network adapter before starting up (NAT and Internal Network) on Windows Server 2019. <br/>
 - Assign static IP Address (172.16.0.1), Subnet Mask (255.255.255.0), and Preferred DNS (127.0.0.1) to Internal Network:  <br/>
 <p align="center">
@@ -89,7 +89,7 @@ Configure Start (172.16.0.100) and End (172.16.0.200) IP Address, and Subnet Mas
 <p align="center">
 <img src="https://imgur.com/orGCgEh.png" height="80%" width="80%" alt="Active Directory"/>
 
-- Run "gpupdate /force" in Command Prompt, then login to workstation "Client1" with a created user to verify software:
+- Run "gpupdate /force" in Command Prompt and on Domain Controller and workstation to verify software installation:
 <p align="center">
 <img src="https://imgur.com/Ijct63B.png" height="80%" width="80%" alt="Active Directory"/>
 

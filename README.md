@@ -95,7 +95,7 @@ Configure Start (172.16.0.100) and End (172.16.0.200) IP Address, and Subnet Mas
 
 - Continue placing Group Policies as you see fit.
 
-- For Example: Enforce Windows Defender Firewall, Event Log, Local Polocies, Account Policy, Windows Settings, Network, Mapped Drives, and etc.
+- For Example: Enforce Windows Defender Firewall, Event Log, Local Policies, Account Policy, Windows Settings, Network, Mapped Drives, and etc.
 <br/>
 
 <p align="center">

@@ -1,4 +1,4 @@
-## Active Directory with Virtual Machines - Implementing Domain Controller and Group Policy.
+<h1>Active Directory, Domain Controller, Workstation and Group Policy Environment - Active Directory Home Lab
 
 ## Description
 In this lab, I am going to walk through how to create an Active Directory home lab Environment using Oracle VirtualBox. Configuring and running this lab will help develop our understanding how Active Directory and windows networking works. In this lab, we will be creating our domain controller on a virtual machine that has two network adapters. This will connect to our outside internet and the other network adapter will connect to our VirtualBox private network. This will allow our client's PC to connect to the internet through the domain controller. We will be configuring our NAT and routing, DHCP, DNS, IP Address on the domain controller, and then a Client PC on another virtual machine. This will allow us to apply Group Policy Objects and provision, maintain, and deprovision users in Active Directory.
